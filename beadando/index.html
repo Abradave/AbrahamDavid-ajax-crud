@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app" class="container bg-primary">
+    <form id="personForm">
+      <div class="row">
+        <input type="hidden" id="id" class="form-control">
+        <div class="col-4">
+          <label for="Lname">Vezetéknév</label>
+          <input type="text" id="Lname" class="form-control" required>
+        </div>
+        <div class="col-4">
+          <label for="Fname">Keresztnév</label>
+          <input type="text" id="Fname" class="form-control" required>
+        </div>
+        <div class="col-4">
+          <label for="CardNum">Kártyaszám</label>
+          <input type="text" id="CardNum" class="form-control" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label for="cvv">CVV</label>
+          <input type="text" id="cvv" class="form-control" required>
+        </div>
+        <div class="col-4">
+          <label for="CreditScore">Értékelés</label>
+          <input type="text" id="CreditScore" class="form-control" required>
+        </div>
+        <div class="col-4">
+          <label for="Created">Helyszín</label>
+          <input type="text" id="Created" class="form-control" required>
+        </div>
+      </div>
+      <button type="submit" id="submitButton" class="btn btn-success">Elküld</button>
+      <button type="submit" id="updateButton" class="hide btn btn-danger">Módosít</button>
+      <button type="reset" id="resetButton" class="btn btn-warning">Alaphelyzetbe</button>
+    </form>
+
+    <table class="table table-danger">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Vezetéknév</th>
+          <th>Keresztnév</th>
+          <th>Kártyaszám</th>
+          <th>CVV</th>
+          <th>Értékelés</th>
+          <th>Helyszín</th>
+        </tr>
+      </thead>
+      <tbody id="Accounts">
+
+      </tbody>
+    </table>
+
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
